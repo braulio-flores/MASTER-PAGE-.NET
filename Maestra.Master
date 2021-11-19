@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Maestra.master.cs" Inherits="Entregable4.Maestra" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Practica</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">   
+    <script src="https://kit.fontawesome.com/4bf5114be3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Practica aspx datos desconectados</h1>
+        <form id="form2" runat="server">
+            <aside>
+                <h4>Navegación</h4>
+                <ul>
+                    <li><i class="fas fa fa-utensils"></i><asp:LinkButton id="lnk1" Text="Comida" runat="server" OnClick="menuComida" /></li>
+                    <li><i class="fas fa fa-video"></i><asp:LinkButton id="lnk2" Text="Peliculas" runat="server" OnClick="menuPeliculas" /></li>
+                </ul>
+            </aside>
+
+            <div class="mainContent" >
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
